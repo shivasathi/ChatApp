@@ -1,0 +1,13 @@
+package server;
+
+
+public enum MessageType {
+    LOGIN,
+    BROADCAST,
+    PRIVATECHAT,
+    SIGNUP,
+    SIGNOUT,
+    LOGINFAILED,
+    USEREXISTS, SIGNUPSUCCESS, LOGINSUCCESS,
+    USERLIST, BLOCKUSER
+};
