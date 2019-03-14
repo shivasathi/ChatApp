@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ClientThread  extends Thread{
-
+//this i amethios
     public String serverAddress,username;
     public int serverPort;
     Socket serverSocket;
@@ -26,6 +26,7 @@ public class ClientThread  extends Thread{
     public ClientThread(ClientUI clientUI, String serverAddress, int serverPort) throws IOException {
         this.serverAddress = serverAddress;
         this.serverPort = serverPort;
+
         serverSocket = new Socket(InetAddress.getByName(serverAddress), serverPort);
         this.socketWriter = new ObjectOutputStream(serverSocket.getOutputStream());
         this.socketReader  = new ObjectInputStream(serverSocket.getInputStream());
